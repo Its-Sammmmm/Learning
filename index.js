@@ -1,9 +1,10 @@
 const express = require("express");
+const dotenve= require("dotenv");
 
+dotenve.config();
 const app = express();
 
-
-const PORT = 5000; 
+const PORT = process.env.PORT; 
 
 app.listen(PORT, () => {
 
